@@ -7,3 +7,9 @@ section, header{
     padding-bottom: 2px;
     padding-right: 10px
 }
+div {
+    padding-left: 25px;
+    padding-top: 10Px;
+    padding-bottom: 10px;
+    padding-right: 10px
+}
