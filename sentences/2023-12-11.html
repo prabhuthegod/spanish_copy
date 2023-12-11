@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+    <title>11-12-2023</title>
+</head>
+<body>
+    <header>
+        <script>
+            function toggleClass(classs){
+                const element = document.querySelector(`.${classs}`);
+                const isHidden = element.className.includes("hidden");
+                element.className = isHidden ? element.className.replace("hidden", ""): `${element.className} hidden`
+            }
+        </script>
+        <h1>once de diciembre de dos mil veintitres</h1>
+    </header>
+    <p>
+        <span onClick="toggleClass('first')">
+            yo me levanto a las séis
+        </span>
+        <div class="first hidden" lang="en">I wake up at six</div>
+        <span onClick="toggleClass('second')">
+           yo no puedo levantarme <span><a href="#*1">*</a></span>
+        </span>
+        <div class="second hidden" lang="en">I cannnot wake up</div>
+        <span onClick="toggleClass('third')">
+            ¿tú puedes levantarte a las séis ?
+        </span>
+        <div class="third hidden" lang="en">Can you wake up at six?</div>
+        <span onclick="toggleClass('fourth')">
+            ¿vosotros podéis levantaros a las séis?
+        </span>
+        <div class="fourth hidden" lang="en">
+            Can you all wake up at six?
+        </div>
+        <span onClick="toggleClass('Fifth')">
+            Sí nosotros podemos levantarnos a las séis.
+        </span>
+        <div class="fifth hidden" lang="en">
+            Yes, we can wake up at six.
+        </div>
+        <span onClick="toggleClass('sixth')">
+            ¿cuál es tu rutina diaria?   
+        </span>
+        <div class="sixth hidden" lang="en">
+            What is your daily routine?
+        </div>
+        <span onclick="toggleClass('seventh')">
+            ¿qué haces tú un día normal?
+        </span>
+        <div class="seventh hidden" lang="en">
+            what do you do on a normal day?
+        </div>
+        <span onclick="toggleClass('eight')">
+            yo me despierto a las ocho de la mañana.
+        </span>
+        <div class="eight hidden" lang="en">I wake up at eight in the morning.</div>
+        <br>
+        <span onclick="toggleClass('ninth')">
+            después de + inf&sol;noun<br>
+            antes de + inf <br>
+            despues de despertarme
+        </span>
+        <div class="ninth hidden" lang="en">
+            after + [doing something/ a certain event]
+            <br>before + [doing something]<br>
+            after waking up
+        </div>
+        <span onclick="toggleClass('tenth')">
+            Yo me cepillo los dientes. después de cepillarme yo desayuno
+        </span>
+        <div class="tenth hidden" lang="en">
+            I brush my teeth. After brushing, I have breakfast.
+        </div>
+        <span onclick="toggleClass('eleventh')">
+           Despues, luegos, entonces
+        </span>
+        <div class="eleventh hidden" lang="en">After,  Then/Next, So/Then</div>
+        <span onclick="toggleClass('twelfth')">
+        nosotros nos despertamos a las nueve y después de despertarnos, nosotros desayunamos</span>
+        <div class="twelfth hidden" lang="en">
+            We wake up at nine, and after waking up, we have breakfast.
+        </div>
+    </p>
+    <footer>
+        <div id="*1" lang="en">*
+            <span onClick="toggleClass('last')"><i>levantarme</i> es usado aquí porque <i>poder</i> es ya conjugado con <i>yo</i> volverse <i>puedo</i> , y <i>me</i> es <abbr lang="en" title="added(third person conjugation)"> añade</abbr> después de <i>levantar</i> a indica levantarse en vez de <i>levantar</i>
+            </span>
+            <div class="last hidden">
+                <i lang="es"> levantarme</i> is used here cause<i lang="es"> poder</i> is already conjugated with <i lang="es"> yo</i> becoming<i lang="es"> puedo</i>, and <i lang="es"> me</i> is added after <i lang="es"> levantar</i> to indicate<i lang="es"> levantarse</i> instead of <i lang="es">levantar</i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
