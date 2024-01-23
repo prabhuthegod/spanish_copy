@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+    <title>19-01-2024</title>
+</head>
+<body>
+    <header>
+        <script>
+            function toggleClass(classs){
+                const element = document.querySelector(`.${classs}`);
+                const isHidden = element.className.includes("hidden");  
+                element.className = isHidden? element.className.replace("hidden", ""): `${element.className} hidden`
+            }
+        </script>
+        <nav>
+            <ol>
+<!--add something later?????-->
+            </ol>
+        </nav>
+        <h1>diecinueve de jenero de dos mil veinticuatro</h1>
+    </header>
+
+    <h2 onclick="toggleClass('first')">
+        El tiempo
+    </h2>
+    <div class="first hidden" lang="en">
+        The time
+    </div>
+    
+    <span onclick="toggleClass('second')">
+        ¿Qué tiempo hace <abbr lang="en" title="today"> hoy</abbr>?
+    </span>
+    <div class="second hidden" lang="en">
+        what's the weather like today?
+    </div>
+    <br>
+    <span onclick="toggleClass('third')">
+        Hace (mucho) <abbr lang="en" title="cold">frio</abbr>, <abbr lang="en" title="hot">calor</abbr>, <abbr lang="en" title="sunny">sol</abbr>, <abbr lang="en" title="windy">viento</abbr>.
+    </span>
+    <div class="third hidden" lang="en">
+        It's &nbsp;&nbsp;&nbsp;&nbsp;(very)&nbsp;&nbsp;&nbsp; cold, hot,&nbsp;&nbsp; sunny, windy.
+    </div>
+    <br>
+    <span onclick="toggleClass('fourth')">
+    Está (muy) <abbr lang="en" title="sunny"> soleado</abbr>, <abbr lang="en" title="clear">despejado</abbr>, <abbr lang="en" title="cloudy">nublado/nuboso</abbr>,<abbr lang="en" title="stormy"> tormentoso</abbr>, <abbr lang="en" title="rainy">lluvioso</abbr>  
+    </span>
+    <div class="fourth hidden" lang="en">
+        It's (very) &nbsp;&nbsp;sunny,&nbsp;&nbsp; clear,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cloudy,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stormy,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rainy.
+    </div>
+    <br>
+    <span onclick="toggleClass('fifth')">
+        llover (-- > verb ) &ndash; llueve mucho
+    </span>
+    <div class="fifth hidden" lang="en">
+        Raining 
+    </div>
+    <br>
+    <span onclick="toggleClass('sixth')">
+        <abbr title="snow" lang="en">nevar</abbr>
+        <div class="sixth hidden" lang="en">
+            snow 
+        </div>
+    </span>
+    &ndash;nieva (mucho) 
+    <br>
+    <span onclick="toggleClass('seventh')">
+        <abbr lang="en" title="to freeze">helar</abbr>
+        <div class="seventh hidden" lang="en">
+            to freeze
+        </div> &ndash; hiela mucho
+    </span>
+    <br>
+    <span onclick="toggleClass('eighth')">
+        hace buen/mal tiempo
+    </span>
+    <div class="eighth hidden" lang="en">
+        the weather is nice/bad
+    </div>
+    <br>
+    <span onclick="toggleClass('ninth')">
+        <span lang="en">noun</span> &larr; lluvia 
+    </span>
+    <div class="ninth hidden" lang="en">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the rain 
+    </div>
+    <br>
+    <span onclick="toggleClass('tenth')">
+        la nube &rarr; nombre
+    </span>
+    <div class="tenth hidden" lang="en">
+        cloud &rarr; noun
+    </div>
+    <br>
+    <span onclick="toggleClass('eleventh')">
+        Hay &lpar;mucho&rpar; nube&lpar;s&rpar; en el <abbr lang="en" title="sky">cielo</abbr> .
+    </span>
+    <div class="eleventh hidden" lang="en">
+        There are (a lot )of cloud(s) in the sky.
+    </div>
+    <br>
+    <span onclick="toggleClass('twelfth')">
+        Hay &lpar;mucho&rpar; tormento.
+    </span>
+    <div class="twelfth hidden" lang="en">
+        it is stormy
+    </div>
+    <br>
+    <span onclick="toggleClass('thirteenth')">
+        Estar de buen&sol;mal <abbr lang="en" title="mood">humor</abbr>    
+    </span>
+    <div class="thirteenth hidden">Being in a good/bad mood</div>
+
+
+    <footer>
+        <nav>
+            <ol>
+                <li>go back to <a href="sentences.html">sentences</a></li>
+                <li>go to<a href="../index.html"> home page</a></li>
+            </ol>
+</body>
+</html>
