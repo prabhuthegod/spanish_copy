@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <title>24-01-2024</title>
+</head>
+<body>
+    <header>
+        <script>
+            function toggleClass(classs){
+                const element = document.querySelector(`.${classs}`);
+                const isHidden = element.className.includes("hidden");
+                element.className = isHidden? element.className.replace("hidden", ""): `${element.className} hidden`
+            }
+        </script>
+        <nav>
+            <ol>
+<!--add something later?????-->
+            </ol>
+        </nav>
+        <h1>veinticuatro de enero de dos mil veinticuatro</h1>
+    </header>
+    <section>
+        <h2 lang="en">The video on this site ( https://www.profedeele.es/actividad/me-gusta-no-me-gusta-gustos/ )</h2>
+    </section>
+    
+    <section>
+        <h2 lang="en"> Class related</h2>
+        <span onClick="toggleClass('first')">
+            Cuál es la temperatura máxima y mínima
+        </span>
+        <div class="first hidden">What is the maximum and minimum temperature</div>
+        <br>
+        <span onClick="toggleClass('second')">
+            la temperatura máxima es 10 grados centígrados
+        </span>
+        <div class="second hidden">the maximum temperature is 10 degree celsius</div>
+        <br>
+        <span onClick="toggleClass('third')">la temperatura mínimaes 2 grados centigrados</span>
+        <div class="third hidden">the mimimum temperature is 2 degree celsius</div>
+        <br>
+        <span onClick="toggleClass('fourth')">hay (mucha) </span><abbr title="fog" lang="en" onClick="toggleClass('fifth')">niebla</abbr><span class="fifth hidden"> fog</span><span onClick="toggleClass('fourth')">, tormenta, nubes en el cielo</span>
+        <div class="fourth hidden">there is  (a lot of) fog, stormy[weather], clouds in the sky</div>
+
+    </section>
+
+    <footer>
+        <nav>
+            <ol>
+                <li>go back to <a href="meanings.html">meanings</a></li>
+                <li>go to<a href="../index.html"> home page</a></li>
+            </ol>
+        </nav>
+    </footer>
+</body>
+</html>
