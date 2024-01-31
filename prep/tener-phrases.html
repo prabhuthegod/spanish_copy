@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden {display: none;
+        }
+    </style>
+    <title>las frases con tener</title>
+</head>
+<body>
+    <header>
+        <script>
+            function toggleClass(classs){
+                const element = document.querySelector(`.${classs}`);
+                const isHidden = element.className.includes("hidden");
+                element.className = isHidden ? element.className.replace("hidden", ""): `${element.className} hidden`
+            }
+        </script>
+        <h1 onClick="toggleClass('first')">las frases con tener</h1>
+        <div class="first hidden">Phrases with tener</div>
+    </header>
+    <table>
+        <tr lang="en">
+            <th>phrases</th><th>meaning in english</th><th></th>
+        </tr>
+        <tr>
+            <td class="spanish">tener ____ años.</td><td lang="en" class="english" >to be ___ years old.<span onclick="toggleClass('fourth')"> example-</span> </td><td><div class="second hidden">Tiene 4 años. <span lang="en">She is 4 years old.</span></div></span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener calor. </td><td lang="en" class="english" >to be or to feel hot. <span onclick="toggleClass('fourth')"> example- </span></td><td class="third hidden">¿tienes calor? <span lang="en">are you hot ?</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener frío.</td><td lang="en" class="english">to be or feel cold. <span onclick="toggleClass('fourth')"> example- </span></td><td class="fourth hidden">los exploradores tendrán frío. <span lang="en">the explorers will be cold.</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener cuidado.</td><td lang="en" class="english">to be careful. <span onclick="toggleClass('fifth')">example-</span></td><td class="fifth hidden">¡Ten cuidado!<!--Not so sure about this--> <span lang="en">Be careful!</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener la culpa.</td><td lang="en" class="english">to be at fault. <span onclick="toggleClass('sixth')">example-</span></td><td class="sixth hidden">Mi madre dice que tengo la culpa. <span lang="en"> My mother says it's my fault.</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener éxito</td><td lang="en" class="english">to be successful. <span onclick="toggleClass('seventh')">example-</span></td><td class="seventh hidden">Mi hermano tiene mucho éxito. <span lang="en">My brother is very successful.</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener hambre.</td><td lang="en" class="english">to be hungry. <span onclick="toggleClass('eigth')">example</span></td><td class="eight hidden">Los niños siempre tienen hambre. <span lang="en">The children are always hungry. </span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener(mucho) sed. </td><td lang="en" class="english">to be(very) thirsty. <span onclick="toggleClass('ninth')">example-</span></td><td class="ninth hidden">El camello no tiene sed. <span lang="en">The camel isn't thirsty</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener(mucho) miedo. </td><td lang="en" class="english">to be (very) afraid/scared <span onclick="toggleClass('tenth')">example-</span></td><td class="tenth hidden">Yo tengo miedo. <span lang="en">I am scared<!-- add of the darkness or smth--> </span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener prisa.</td><td lang="en" class="english">to be in a hurry <span onclick="toggleClass('eleventh')">example-</span></td><td class="eleventh hidden">Mi hija nunca tiene prisa. <span lang="en">My daughter is never in a hurry.</span></td>
+        </tr>
+        <tr>
+            <td class="span">tener razón.</td><td lang="en" class="english">to be right. <span onclick="toggleClass('tewlfth')">example-</span></td><td class="tewlfth hidden">Tengo razón. <span lang="en">I'm right</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">no tener razón.</td><td lang="en" class="english">to be wrong. <span onclick="toggleClass('tewlfth')">example-</span></td><td class="tewlfth hidden">No tienes razón. <span lang="en">You are wrong.</span></td>
+        </tr>
+        <tr>
+            <td class="spanish">tener suerte</td><td lang="en" class="english">to be lucky <span onclick="toggleClass=('thirteen')">example-</span></td><td class="thirteen hidden">yo tengo suerte. <span lang="en">I am lucky</span></td>
+        </tr>
+    </table>
+</body>
+</html>
