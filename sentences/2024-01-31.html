@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section {
+            white-space: pre-line;
+        }
+        .hidden {
+            display: none;
+        }
+        .expand {
+            /* add the styling, something like dots*/
+        }
+    </style>
+    <title>31-01-2024</title>
+</head>
+<body>
+    <header>
+        <script>
+            function toggleClass(classs){
+                const element = document.querySelector(`.${classs}`);
+                const isHidden = element.className.includes("hidden");
+                element.className = isHidden ? element.className.replace("hidden", ""): `${element.className} hidden`
+            }
+        </script>
+        <h1>Treinta y uno de enero de dos mil veinticuatro</h1>
+        <h2>
+          => Gustar y verbos similares
+        </h2>
+       <nav>
+        <ol>
+            <li><a href="">gustar</a></li>
+            <li><a href="">costar</a></li>
+            <li><a href="">aburrir</a></li>
+            <li><a href="">interesar</a></li>
+            <li><a href="#encantar">encantar</a></li>
+            <li><a href="#faltar">faltar</a></li>
+            <li><a href="">fascinar</a></li>
+            <li><a href="">importar</a></li>
+            <li><a href="">molestar</a></li>
+            <li><a href="">quedar</a></li>
+            <li><a href="">disgustar</a></li>
+            <li><a href="">parecer</a></li>
+        </ol>
+       </nav>
+    </header>
+    <section id="aburrir">
+        aburrir= <span lang="en">to bore</span>
+        aburre + <span lang="en">singular, inf. verb</span> 
+        aburren + <span lang="en">plural</span> 
+        por ejemplo- <span onclick="toggleClass('first')" class="expand">
+          me aburre la clase de español 
+          me aburren los libros de ....
+          me aburre ir de compras</span>
+        <div class="first hidden">
+            the spanish class bores me
+            the books of .... bore me
+            going shopping bores me
+        </div>
+    </section>
+    <section id="encantar">
+        encantar= gustar mucho
+    </section>
+    <br>
+    <section id="faltar">
+        faltar = to lock, to need, to be missing
+    </section> 
+    
+</body>
+</html>
