@@ -3,21 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .hidden {display: none;
-        }
-    </style>
+    <script src="/java/hidden.js"></script>
+    <link rel="stylesheet" href="/css/expand.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>las frases con tener</title>
 </head>
 <body>
     <header>
-        <script>
-            function toggleClass(classs){
-                const element = document.querySelector(`.${classs}`);
-                const isHidden = element.className.includes("hidden");
-                element.className = isHidden ? element.className.replace("hidden", ""): `${element.className} hidden`
-            }
-        </script>
         <h1 onClick="toggleClass('first')">las frases con tener</h1>
         <div class="first hidden">Phrases with tener</div>
     </header>
@@ -65,5 +57,20 @@
             <td class="spanish">tener suerte</td><td lang="en" class="english">to be lucky <span onclick="toggleClass=('thirteen')">example-</span></td><td class="thirteen hidden">yo tengo suerte. <span lang="en">I am lucky</span></td>
         </tr>
     </table>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="syllabus.html">syllabus</a>
+                </li>
+                <li>
+                    <a href="prep.html">prep</a>
+                </li>
+                <li>
+                    <a href="../index.html">Home Page</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

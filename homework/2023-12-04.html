@@ -2,27 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <script src="/java/hidden.js"></script>
+    <link rel="stylesheet" href="/css/expand.css">
     <link href="css/04-12-2023.css" rel="stylesheet">
-    <style>
-        .hidden {
-         display: none;
-       }
-     </style>
+    <link rel="stylesheet" href="/css/footer.css">
     <title>04-12-2023</title>
 </head>
 <body>
-    <header>    
-        
-        <script>
-            function toggleClass(classs){
-                const element = document.querySelector(`.${classs}`);
-                const isHidden = element.className.includes("hidden");
-                element.className = isHidden ? element.className.replace("hidden", ""): `${element.className} hidden`
-            }
-        </script>    
+    <header> 
+        <h1>deberes de cuatro de diciembre de dos mil veintitrés</h1>
     </header>
-    <h1>deberes de cuatro de diciembre de dos mil veintitrés</h1>
     <section>
         <h2>q-1</h2>
         <section>
@@ -113,10 +103,10 @@
     </section>
     <footer>
         <nav>
-            <ol>
-                <li>go back to <a href="homework.html">homework</a></li>
-                <li>go to<a href="../index.html"> home page</a></li>
-            </ol>
+            <ul>
+                <li><a href="homework.html">homework</a></li>
+                <li><a href="../index.html"> home page</a></li>
+            </ul>
         </nav>
     </footer>
 </body>

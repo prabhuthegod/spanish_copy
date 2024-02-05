@@ -3,23 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .hidden{
-            display: none;
-        }
-    </style>
+    <script src="/java/hidden.js"></script>
+    <link rel="stylesheet" href="/css/expand.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>11-12-2023</title>
 </head>
 <body>
     <header>
         <h1>deberes de once de diciembre de dos mil veintitres</h1>
-        <script>
-            function toggleClass(classs){
-                const element = document.querySelector(`.${classs}`);
-                const isHidden = element.className.includes("hidden");
-                element.className = isHidden ? element.className.replace("hidden", ""): `${element.className} hidden`
-            }
-        </script>
     </header>
     <section>
         <div onclick="toggleClass('first')">
@@ -49,10 +40,10 @@
 
     <footer>
         <nav>
-            <ol>
-                <li>go back to<a href="homework.html">homework</a></li>
-                <li>go to<a href="../index.html"> home page</a></li>
-            </ol>
+            <ul>
+                <li><a href="homework.html">homework</a></li>
+                <li><a href="../index.html"> home page</a></li>
+            </ul>
         </nav>
     </footer>
 </body>

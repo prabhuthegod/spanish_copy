@@ -1,0 +1,35 @@
+.hidden {
+    display: none;
+}
+
+.expand {
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+    text-decoration: underline; /* Underline the text to make it stand out */
+}
+
+.expand:hover {
+    text-decoration: none; /* Remove underline on hover to maintain clarity */
+}
+
+/* Example of using an arrow for expansion */
+.expand::after {
+    content: ' ▼'; /* Unicode arrow character */
+    font-size: .8em; /* Adjust the font size as needed */
+}
+
+/* Generic styling for elements with onClick attribute */
+[onClick] {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Remove underline on hover */
+[onClick]:hover {
+    text-decoration: none;
+}
+
+/* Example of using an arrow for expansion */
+[onClick]::after {
+    content: ' ▼';
+    font-size: .8em;
+}
