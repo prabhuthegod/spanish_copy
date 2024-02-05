@@ -3,53 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        section {
-            white-space: pre-line;
-        }
-        .hidden {
-            display: none;
-        }
-        .expand {
-            /* add the styling, something like dots*/
-        }
-    </style>
+    <link rel="stylesheet" href="sentences.css">
+    <link rel="stylesheet" href="../css/expand.css">
+    <script src="../hidden.js"></script>
     <title>31-01-2024</title>
 </head>
 <body>
     <header>
-        <script>
-            function toggleClass(classs){
-                const element = document.querySelector(`.${classs}`);
-                const isHidden = element.className.includes("hidden");
-                element.className = isHidden ? element.className.replace("hidden", ""): `${element.className} hidden`
-            }
-        </script>
+        
         <h1>Treinta y uno de enero de dos mil veinticuatro</h1>
         <h2>
           => Gustar y verbos similares
         </h2>
-       <nav>
-        <ol>
+       <nav class="navbar">
+        <ul>
             <li><a href="">gustar</a></li>
             <li><a href="">costar</a></li>
-            <li><a href="">aburrir</a></li>
+            <li><a href="#aburrir">aburrir</a></li>
             <li><a href="">interesar</a></li>
             <li><a href="#encantar">encantar</a></li>
             <li><a href="#faltar">faltar</a></li>
-            <li><a href="">fascinar</a></li>
+            <li><a href="#fascinar">fascinar</a></li>
             <li><a href="">importar</a></li>
             <li><a href="">molestar</a></li>
             <li><a href="">quedar</a></li>
             <li><a href="">disgustar</a></li>
             <li><a href="">parecer</a></li>
-        </ol>
+        </ul>
        </nav>
     </header>
+    <section>
+        <span lang="en">here the forms of the verbs will NOT depend on pronouns like</span> me, te, le, nos, os, les, etc. <span lang="en">Instead they wil depend on whether if it's with a singular or plural subject</span>
+    </section>
     <section id="aburrir">
         aburrir= <span lang="en">to bore</span>
         aburre + <span lang="en">singular, inf. verb</span> 
         aburren + <span lang="en">plural</span> 
+
         por ejemplo- <span onclick="toggleClass('first')" class="expand">
           me aburre la clase de español 
           me aburren los libros de ....
@@ -59,14 +49,53 @@
             the books of .... bore me
             going shopping bores me
         </div>
+        <span onclick="toggleClass('second') ">¿qué te aburre?</span>
+        <div class="second hidden">What bores you?</div>
     </section>
     <section id="encantar">
         encantar= gustar mucho
+        encanta + <span lang="en">singular</span>
+        encantan + <span lang="en">plural</span>
+        por ejemplo-
+           <span onclick="toggleClass('third')">¿qué te encanta?</span><div class="third hidden">What do you love? or What do you like a lot?</div><span onclick="toggleClass('fourth')" class="expand">
+           me encanta ese libro. 
+           me encantan las novelas ficticias.
+           le encanta el sol.</span>
+        <div class="fourth hidden">
+            I love that book.
+            I love fictional novels.
+            He/she loves the sun.
+        </div>
     </section>
     <br>
     <section id="faltar">
-        faltar = to lock, to need, to be missing
+        faltar =<span lang="en"> to lock, to need, to be missing</span>
     </section> 
-    
+    <section id="fascinar">
+        fascinar- <span lang="en">to fascinate</span>
+        fascina + <span lang="en"></span>
+    </section>
+    <section id="importar">
+        importar-
+    </section>
+    <section id="interesar">
+        interesar-
+    </section>
+    <section id="molestar">
+        molestar-
+    </section>
+    <section id="quedar">
+        quedar-
+    </section>
+
+
+    <footer>
+        <nav>
+            <ol>
+                <li>go back to <a href="sentences.html">sentences</a></li>
+                <li>go to<a href="../index.html"> home page</a></li>
+            </ol>
+        </nav>
+    </footer>
 </body>
 </html>
