@@ -32,3 +32,13 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* New background color */
+body {
+    color: #d7bcff;
+    background-color: #09060d;
+}
+
+footer {
+    margin-top: 38%;
+}
