@@ -1,15 +1,18 @@
-abbr{
+abbr {
     text-decoration: none;
 }
-section, header{
+
+section,
+header {
     padding-left: 15px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-right: 10px
+    padding-right: 10px;
 }
+
 div {
     padding-left: 25px;
-    padding-top: 10Px;
+    padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 10px
+    padding-right: 10px;
 }
